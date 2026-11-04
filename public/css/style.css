@@ -1,0 +1,240 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: bolder !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* MAP */
+#map {
+    width: 80vh;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* ICONS */
+/* #filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter {
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 1rem;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 2px solid black;
+    color: red;
+    border-radius: 1rem;
+    height: 3.5rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+} */
+
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter {
+    text-align: center;
+    margin-left: 1rem; 
+    margin-top: 1.5rem;
+    padding: 0.25rem;
+    opacity: 0.7;
+}
+
+.filter i {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: #000;
+}
+
+.filter p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #222222;
+    border-bottom: 2px solid #b0b0b0;
+}
+
+.filter.active {
+    opacity: 1;
+    color: #222222;
+    border-bottom: 2px solid #222222;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid #dddddd;
+    color: #222222;
+    border-radius: 1rem;
+    min-height: 3.5rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.tax-toggle .form-check {
+    margin-bottom: 0;
+}
+
+.tax-toggle .form-check-input:checked {
+    background-color: #222222;
+    border-color: #222222;
+}
+
+.tax-toggle .form-check-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    #filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .filter {
+        flex-shrink: 0;
+        margin-left: 1rem;
+    }
+
+    .tax-toggle {
+        margin-left: 1rem;
+    }
+}

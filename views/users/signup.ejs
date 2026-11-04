@@ -1,0 +1,27 @@
+<%layout('/layouts/bolierplate')%>
+<div class="row mt-3">
+    <h3 class="col-6 offset-3">SignUp for AIRBNB</h3>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" id="username" required>
+                <div class="valid-feedback">username looks good!</div>
+                <div class="invalid-feedback">username required!</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" required>
+                <div class="valid-feedback">email looks good!</div>
+                <div class="invalid-feedback">email required!</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="password" required>
+                <div class="valid-feedback">password looks good!</div>
+                <div class="invalid-feedback">password required!</div>
+            </div>
+            <button class="btn btn-outline-success">SignUP</button>
+        </form>
+    </div>
+</div>
